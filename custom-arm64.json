@@ -1,0 +1,11 @@
+{
+    "inherit_from": "data/defaults.json",
+    "architecture": "arm64",
+    "kernel_flavor": "v8-arm64-vyos",
+    "bootloaders": "grub-efi",
+    "additional_repositories": [
+        "deb https://repo.saltproject.io/py3/debian/10/amd64/3003 buster main",
+        "deb http://repo.powerdns.com/debian bullseye-rec-45 main",
+        "deb https://repos.influxdata.com/debian bullseye stable"
+    ]
+}

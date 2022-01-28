@@ -16,7 +16,7 @@ echo "Copy new default configuration to the vyos image"
 cp ${ROOTDIR}/config.boot.default data/live-build-config/includes.chroot/opt/vyatta/etc/config.boot.default
 
 # Build the image
-VYOS_BUILD_FLAVOR=data/generic-arm64.json ./configure
+VYOS_BUILD_FLAVOR=${ROOTDIR}/custom-arm64.json ./configure
 make iso
 
 cd $ROOTDIR
